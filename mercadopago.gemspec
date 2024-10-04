@@ -14,8 +14,6 @@ Gem::Specification.new do |gem|
   gem.test_files    = gem.files.grep(%r{^(tests)/})
   gem.require_paths = %w(lib)
 
-  gem.add_dependency 'json'
-
   gem.add_development_dependency 'pry'
   gem.add_development_dependency 'rake'
 end
