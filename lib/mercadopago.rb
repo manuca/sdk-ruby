@@ -288,7 +288,7 @@ class MercadoPago
 	end
 
 	def build_query(params)
-		URI.escape(params.collect { |k, v| "#{k}=#{v}" }.join('&'))
+    URI::DEFAULT_PARSER.escape(params.collect { |k, v| "#{k}=#{v}" }.join('&'))
 	end
 
 	private
