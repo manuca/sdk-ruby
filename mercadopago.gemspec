@@ -10,7 +10,7 @@ Gem::Specification.new do |gem|
   gem.summary       = %q{MercadoPago Ruby SDK}
   gem.homepage      = 'http://github.com/mercadopago/sdk-ruby'
 
-  gem.files         = `git ls-files`.split($/)
+  gem.files = Dir["lib/**/*.rb"]
   gem.test_files    = gem.files.grep(%r{^(tests)/})
   gem.require_paths = %w(lib)
 
